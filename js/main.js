@@ -1,26 +1,39 @@
 'use strict'
 
-console.log('arr' + ' - object');
-console.log(4 + ' - object');
+if (4 == 9) {
+    console.log('ok!')
+} else {
+    console.log('Error!')
+}
+
+let num = 50;
+
+if (num < 49) {
+    console.log('Error')
+} else if (num > 100) {
+    console.log('МНого')
+} else {
+    console.log('Ok')
+}
+
+(num === 30) ? console.log('Ok') : console.log('Error')
 
 
+const newNum = 51;
 
-let incr = 10,
-    decr = 10;
+switch (newNum) {
+    case 49:
+        console.log('Неверно');
+        break;
+    case 100:
+        console.log('Неверно');
+        break;
 
-incr++;
-decr--;
+    case 50:
+        console.log('В точку!')
+        break;
+    default:
+        console.log('Не в этот раз')
+        break
 
-console.log(incr++);
-console.log(incr);
-console.log(--decr);
-
-console.log(5 % 2)
-
-console.log(2 * 4 == '8')
-console.log(2 * 4 === '8')
-
-const isChecked = false,
-    isClose = false;
-
-console.log(isChecked || !isClose)
+}
