@@ -1,39 +1,24 @@
 'use strict'
 
-if (4 == 9) {
-    console.log('ok!')
-} else {
-    console.log('Error!')
-}
-
 let num = 50;
 
-if (num < 49) {
-    console.log('Error')
-} else if (num > 100) {
-    console.log('МНого')
-} else {
-    console.log('Ok')
+while (num <= 55) {
+    console.log(num)
+    num++;
 }
 
-(num === 30) ? console.log('Ok') : console.log('Error')
+do {
+    console.log(num)
+    num++;
+}
+while (num < 55)
 
 
-const newNum = 51;
+for (let i = 1; i < 8; i++) {
 
-switch (newNum) {
-    case 49:
-        console.log('Неверно');
-        break;
-    case 100:
-        console.log('Неверно');
-        break;
-
-    case 50:
-        console.log('В точку!')
-        break;
-    default:
-        console.log('Не в этот раз')
-        break
-
+    if (i === 6) {
+        // break;
+        continue;
+    }
+    console.log(i)
 }
